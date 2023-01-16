@@ -1,0 +1,24 @@
+<%
+  msgs = {
+       1 => 'Senha incorreta.',
+       2 => 'Esta conta não existe.',
+       3 => 'Esta conta foi <b>banida</b>'
+  }
+%>
+
+<h1>Erro</h1>
+
+<div>
+
+<p style="padding: 50px">
+<%= msgs[code.to_i] %>
+</p>
+
+<%= if code.to_i == 3 then
+      '<p>Siga as <a href="/regras">regras</a> da próxima vez</p>'
+   end
+%>
+
+<a href="/">Voltar</a>
+
+</div>

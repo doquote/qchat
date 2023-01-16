@@ -1,0 +1,15 @@
+<h1>qChat</h1>
+
+<div>
+	<h3>Entre em uma sala.</h3>
+
+	<ul>
+		<li><a href="/chat?room=geral">Discussão Geral</a>
+		<% File.readlines('rooms').each do |room| %>
+		<% next if room == "\n" %>
+		<%= 	"<li><a href=\"/chat?room=#{room}\">#{room}</a>" %>
+		<% end %>
+	</ul>
+</div>
+
+<p>Lembre-se de seguir as <a href="/regras/">regras</a>.</p>

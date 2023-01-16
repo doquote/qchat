@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<style>
+			html {
+			     font-family: Arial, "sans-serif";
+			     color: white;
+			     background-color: 'black';
+			}
+		</style>
+	<head>
+
+	<body>
+
+		<% if mod %>
+		   <%= '<ol>' %>
+		   <% File.readlines("logs/#{room}").each do |msg| %>
+		       <%= "<li>#{msg}" %>
+		   <% end %>
+		   <%= '</ol>' %>
+		<% else %>
+		   <%= File.read "logs/#{room}" %>
+		<% end %>
+
+	</body>
+</html>
