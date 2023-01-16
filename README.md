@@ -10,9 +10,7 @@ Para executar a aplicação, é necessário primeiro instalar algumas dependênc
 
 1. Crie uma variável de ambiente chamada "APP_ENV".
 2. Armazene nela o texto "production".
-3. Finalmente, execute a aplicação:
-
-    ruby qchat.rb
+3. Finalmente, execute a aplicação: ruby qchat.rb
 
 ## Licença
 Dedicado ao domínio público. Copie e modifique. Faça o que quiser para melhorar a aplicação.
